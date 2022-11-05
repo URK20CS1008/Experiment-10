@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1 style='text-align:center;color:blue;'>User Submitted Deatils</h1>
+    <br><br>
+    <div style="color:blue;text-align: center;">
+        <form action="/server" method="post">
+            Name: &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="username">
+            <br><br>
+            Password: &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="password">
+            <br><br>
+            Age: &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="age">
+            <br><br>
+            Mobile Number: &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="number">
+            <br><br>
+            Email: &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="email">
+            <br><br>
+            Gender: &nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="gender" value="Male">Male
+            <input type="radio" name="gender" value="Female">Female
+            <br><br>
+            State: &nbsp;&nbsp;&nbsp;&nbsp;<select name="state">
+                <option>Tamil Nadu</option>
+                <option>Kerala</option>
+                <option>Karnataka</option>
+            </select>
+            <br><br>
+            Skills: &nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="skill[]" value="Java Script"><label>Java Script</label>
+            <input type="checkbox" name="skill[]" value="Python"><label>Python</label>
+            <input type="checkbox" name="skill[]" value="C++"><label>C++</label>
+            <input type="checkbox" name="skill[]" value="Java"><label>Java</label>
+            <br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
